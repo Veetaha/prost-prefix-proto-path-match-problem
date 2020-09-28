@@ -1,5 +1,7 @@
 # Issue
 
+[Original issue](https://github.com/danburkert/prost/issues/371).
+
 To reproduce the issue run
 
 ```sh
