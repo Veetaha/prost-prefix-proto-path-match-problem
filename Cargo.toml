@@ -1,0 +1,11 @@
+[package]
+name = "the-crate"
+version = "0.1.0"
+authors = ["Veetaha <veetaha2@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+prost = "0.6.1"
+
+[build-dependencies]
+prost-build = "0.6.1"

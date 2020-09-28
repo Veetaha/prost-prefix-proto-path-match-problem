@@ -1,0 +1,15 @@
+syntax = "proto2";
+package issue;
+
+
+message Foo {
+    // Suppose it is required for this enum be nested under Foo message
+    // and Foo message itself has to derive `Copy` or some other custom trait
+    // At the time of this writing we cannot achieve this via `type_attribute`
+    // because `NestedEnum` "inherits" all of the type attributes applied to the
+    // parent message
+    enum NestedEnum {
+        A = 0;
+        B = 1;
+    }
+}
